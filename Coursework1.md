@@ -7,14 +7,6 @@ hist(Global active power, col="red", ylim=c(0,1200))
 dev.copy(png,filename="plot1.png");
 dev.off ();
 
-# ALTERNATE METHOD for Plot1
-# library(descr)
-# x = c("Global_active_power")
-# freq(x, plot = FALSE)
-# plot(FrequencyxGlobal_active_power[1,], Main = "Global Active Power", + xlab="Global active power (kilowatts)", 
-# ylab="Frequency", type="b", xaxt="n", axis(1,1:length
-
-
 GAP <- data.frame(Date = factor(c("Thu", "Fri","Sat"), level=c("Thu", "Fri", "Sat")), Global_active_power=c(Global_active_power)
 submetering1=c(Sub_metering_1)
 submetering2=c(Sub_metering_2)
@@ -29,3 +21,14 @@ dev.off ();
 ggplot(data=GAP,aes(x=Date, y=submetering1,submetering2,submetering3 group=3 color=submetering1,submetering2,submetering3) + geomline() + expand_limits(y=0) + theme_bw() + theme(legend.position=c(.7, .4))
 dev.copy(png,filename="plot3.png");
 dev.off ();
+
+
+
+
+
+# ALTERNATE METHOD for Plot1
+# library(descr)
+# x = c("Global_active_power")
+# freq(x, plot = FALSE)
+# plot(FrequencyxGlobal_active_power[1,], Main = "Global Active Power", + xlab="Global active power (kilowatts)", 
+# ylab="Frequency", type="b", xaxt="n", axis(1,1:length

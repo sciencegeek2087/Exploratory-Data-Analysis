@@ -15,11 +15,15 @@ dev.off ();
 # ylab="Frequency", type="b", xaxt="n", axis(1,1:length
 
 
-GAP <- data.frame(Date = factor(c("Thu", "Fri","Sat"), level=c("Thu", "Fri", "Sat")), Global_active_power=c(Global_active_power) 
+GAP <- data.frame(Date = factor(c("Thu", "Fri","Sat"), level=c("Thu", "Fri", "Sat")), Global_active_power=c(Global_active_power)
+Sub metering 1=c(Sub_metering_1)
+Sub metering 2=c(Sub_metering_2)
+Sub metering 3=c(Sub_metering_3)
 
 library(ggplot2)
+
 ggplot(data=GAP,aes(x=Date, y=Global_active_power, group=1) + geomline() + expand_limits(y=0) + ylab(Global Active Power (kilowatts)
 dev.copy(png,filename="plot2.png");
 dev.off ();
 
-ggplot(data=GAP
+ggplot(data=GAP,aes(x=Date, y=

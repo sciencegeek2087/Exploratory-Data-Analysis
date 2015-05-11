@@ -1,2 +1,3 @@
 # Exploratory-Data-Analysis
-Cousre on Coursera called "Exploratory Data Analysis" from John Hopkins University
+
+Files for the Course on Coursera called "Exploratory Data Analysis" from John Hopkins University

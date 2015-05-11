@@ -18,7 +18,7 @@ submetering3=c(Sub_metering_3)
 
 library(ggplot2)
 
-ggplot(data=GAP,aes(x=Date, y=Global_active_power, group=1) + geomline() + expand_limits(y=0) + ylab(Global Active Power (kilowatts)
+ggplot2(data=GAP,aes(x=Date, y=Global_active_power, group=1) + geomline() + expand_limits(y=0) + ylab(Global Active Power (kilowatts)
 dev.copy(png,filename="plot2.png");
 dev.off ();
 
